@@ -1,0 +1,102 @@
+<!-- All images taken from https://www.google.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Personal Organizer</title>
+    <!-- favicon -->
+    <link rel="icon" href="imgs/footerlogo.png" type="image/x-icon">
+    <!-- css styles for the page -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="organizer">
+    <header>
+        <div id="head-section">
+            <!-- Header logo -->
+            <img src="imgs/headerlogo.png" alt="logo-image" width="10%">
+            <!-- Header navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a> </li>
+                    <li><a href="organizer.html">ORGANIZER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Streamline Your Productivity</h1>
+        <p>
+            It's critical to successfully manage your tasks if you want to accomplish your goals and boost productivity. Organize your to-do list and prioritize your task to get started right away.
+        </p>
+        <!-- button links to contact page -->
+        <button onclick="location.href = 'contact.html';" id="submit" type="button">Register Now</button>
+    </header>
+
+    <main>
+        <div id="herosection">
+            <h2><i>Get Organized: Manage Your Tasks Today</i></h2>
+            <!-- Form to take input tasks from user -->
+            <form id="task-form">
+                <div>
+                    <label for="task-name">Task Name : </label>
+                    <input type="text" id="task-name" name="task-name" placeholder="Enter task name" required>
+                </div>
+                
+                <div>
+                    <label for="task-name">Task Status : </label>
+                    <input type="text" id="task-status" name="task-status" placeholder="Enter task status" required>
+                </div>
+                
+                <div>
+                    <label for="task-date">Task Date : </label>
+                    <input type="date" id="task-date" name="task-date" required><br/>
+                </div>
+                
+                <div id="button-div">
+                    <button type="submit" id="submit">Add Task</button>
+                </div>
+                
+            </form>
+            <!-- form to display the tasks entered -->
+            <table id="task-table">
+                <thead>
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Status</th>
+                        <th>Task Date</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- table rows will be added dynamically using JavaScript -->
+                </tbody>
+            </table>
+            <!-- JS for the organizer table -->
+            <script src="js/organizer.js"></script>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <!-- Footer logo -->
+            <img src="imgs/headerlogo.png" alt="footer-logo-image" />
+            <!-- footer navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a> </li>
+                    <li><a href="organizer.html">ORGANIZER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p id="copyright">Copyright &copy; Student Personal Organizer 2023/ AkhilaGeorge/ 8834039</p>
+        </div>
+    </footer>
+</body>
+
+</html>

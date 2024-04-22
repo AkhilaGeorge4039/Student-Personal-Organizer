@@ -1,0 +1,86 @@
+<!-- All images taken from https://www.google.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Personal Organizer</title>
+    <!--  Favicon  -->
+    <link rel="icon" href="imgs/footerlogo.png" type="image/x-icon">
+    <!-- css styles for the page -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS for the clock display -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="head-section">
+            <!-- header logo -->
+            <img src="imgs/headerlogo.png" alt="header-logo-image" width="10%">
+            <!-- header navigation bar -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a> </li>
+                    <li><a href="organizer.html">ORGANIZER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- This section connects to the Organizer page -->
+        <h1>Optimize Your Workflow</h1>
+        <p>Use our application to boost your output and develop into the prosperous person you've always wanted to be.
+        </p>
+        <!-- button links to organizer page -->
+        <button onclick="location.href = 'organizer.html';" id="submit" type="button">Organize Now</button>
+    </header>
+
+    <main>
+        <!-- Clock Display -->
+        <div id="clocksection">
+            <h2>Boost Your Productivity</h2>
+            <p>
+                Be the change you wish to see by effectively managing your time so that your work is more productive.
+            </p>
+            <div id="clock">
+                <span id="hours"></span> :
+                <span id="minutes"></span> :
+                <span id="seconds"></span>
+                <span id="ampm"></span>
+            </div>
+        </div>
+        <!-- This section connects to the Contact page -->
+        <div id="bottomsection">
+            <h2>Become a part of our community today!</h2>
+            <p>
+                Connect with others who share your interests by becoming a member of our community today. Don't
+                wait; take action right away and join our community.
+            </p>
+            <!-- button links to contact page -->
+            <button onclick="location.href = 'contact.html';" id="submit" type="button">Register Now</button>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <!-- Footer logo -->
+            <img src="imgs/headerlogo.png" alt="footer-logo-image" />
+            <!-- footer navigation bar -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a> </li>
+                    <li><a href="organizer.html">ORGANIZER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p id="copyright">Copyright &copy; Student Personal Organizer 2023/ AkhilaGeorge/ 8834039</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!-- All images taken from https://www.google.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Personal Organizer</title>
+    <!-- favicon -->
+    <link rel="icon" href="imgs/footerlogo.png" type="image/x-icon">
+    <!-- css styles for the page -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JS for the contact form -->
+    <script src="js/contact.js"></script>
+
+</head>
+
+<body id="contactpage">
+    <header>
+        <div id="head-section">
+            <!-- Header logo -->
+            <img src="imgs/headerlogo.png" alt="logo-image" width="10%">
+            <!-- Header navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a> </li>
+                    <li><a href="organizer.html">ORGANIZER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Contact Us</h1>
+        <p>Use our application to boost your output and develop into the prosperous person you've always wanted to be.
+        </p>
+        <!-- button links to organizer page -->
+        <button onclick="location.href = 'organizer.html';" id="submit" type="button">Organize Now</button>
+    </header>
+
+    <main>
+        <div id="herosection">
+            <div>
+                <h2><i>Get in Touch</i></h2>
+                <!-- Contact form -->
+                <form  action="thanks.html" method="get" name="contact-form" id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required><br/>
+                    <input type="text" id="email" name="email" placeholder="Your Email" required><br/>
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required><br/>
+                    <textarea id="message" name="message" placeholder="Write your message here ..." required></textarea><br/>
+                    <input type="submit" value="Submit">
+            </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <!-- footer logo -->
+            <img src="imgs/headerlogo.png" alt="footer-logo-image" />
+            <!-- footer navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a> </li>
+                    <li><a href="organizer.html">ORGANIZER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p id="copyright">Copyright &copy; Student Personal Organizer 2023/ AkhilaGeorge/ 8834039</p>
+        </div>
+    </footer>
+</body>
+
+</html>
